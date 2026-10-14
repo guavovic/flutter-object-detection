@@ -25,7 +25,6 @@ O app precisa dizer o que há à frente: o objeto, onde está e de que cor. Para
 - **Caixas grossas e amarelas, com o nome em letra grande sobre fundo preto**, desenhadas por cima da imagem. Tocar na tela fala os três maiores objetos.
 - O app fica só em **retrato**, para a caixa coincidir com a imagem sem cálculos de giro da tela.
 - A detecção roda na thread principal, descartando os quadros que chegam enquanto o anterior ainda é analisado.
-- Para o build do plugin com o Java 11 e o Kotlin 17, `kotlin.jvm.target.validation.mode=warning` em `android/gradle.properties`.
 
 ## Consequências
 

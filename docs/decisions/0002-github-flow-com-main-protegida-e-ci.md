@@ -20,7 +20,7 @@ GitHub Flow.
 
 - Toda mudança vai numa branch própria (`feat/...`, `fix/...`, `chore/...`) e entra na `main` por pull request. Só se aceita *squash*, e a branch é apagada depois.
 - A `main` é protegida: PR obrigatória, e o check `Build` precisa passar com a branch atualizada. A regra vale também para administradores, sem force push.
-- O CI (`.github/workflows/ci.yml`) roda no Linux, em toda PR e em todo push na `main`: `flutter pub get`, `flutter analyze`, `flutter test` e `flutter build apk --debug`. Aviso da análise quebra o build.
+- O CI roda no Linux, em toda PR e em todo push na `main`: `flutter pub get`, `flutter analyze`, `flutter test` e `flutter build apk --debug`. Aviso da análise quebra o build.
 - O Dependabot acompanha os pacotes do Dart, o Gradle e as Actions uma vez por mês, com minor e patch agrupados e as major em PRs separadas. As correções de segurança chegam na hora, pelos alertas do GitHub.
 - As versões são tags na `main`, e a v2 sai como tag quando a trilha fechar.
 
