@@ -2,15 +2,18 @@
   <img src="docs/assets/icone.svg" alt="" width="160">
 </p>
 
-<h1 align="center">Vera</h1>
+<h1 align="center">Flutter Object Detection</h1>
 
 <p align="center">
-  <a href="https://github.com/guavovic/vera/releases"><img src="https://img.shields.io/github/v/release/guavovic/vera?include_prereleases&style=flat-square&label=release&color=ffff00" alt="Release"></a>
-  <a href="https://github.com/guavovic/vera/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/guavovic/vera/ci.yml?branch=main&style=flat-square&label=CI" alt="CI"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/guavovic/vera?style=flat-square&label=licen%C3%A7a&color=ffff00" alt="Licença"></a>
+  <a href="https://github.com/guavovic/flutter-object-detection/releases"><img src="https://img.shields.io/github/v/release/guavovic/flutter-object-detection?include_prereleases&style=flat-square&label=release&color=ffff00" alt="Release"></a>
+  <a href="https://github.com/guavovic/flutter-object-detection/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/guavovic/flutter-object-detection/ci.yml?branch=main&style=flat-square&label=CI" alt="CI"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/guavovic/flutter-object-detection?style=flat-square&label=licen%C3%A7a&color=ffff00" alt="Licença"></a>
 </p>
 
-<p align="center">Aplicativo de celular, feito para pessoas cegas e com baixa visão, que diz em voz alta o que a câmera está apontando. Você aponta, e a Vera mostra na tela e fala o que há à frente: o objeto, onde ele está e de que cor é.</p>
+<p align="center">Aplicativo de celular, feito para pessoas cegas e com baixa visão, que diz em voz alta o que a câmera está apontando. Você aponta, e o app mostra na tela e fala o que há à frente: o objeto, onde ele está e de que cor é.</p>
+
+> [!NOTE]
+> Projeto encerrado em 14/10/2026. O código fica público como registro de estudo e não recebe mais mudanças.
 
 <p align="center">
   <a href="docs/decisions">Decisões de arquitetura</a>
@@ -26,9 +29,9 @@
 
 ## Como foi feito
 
-Começou como um trabalho de faculdade que só dizia o nome da cor de uma foto. Hoje ele funciona ao vivo e continua em desenvolvimento.
+Começou como um trabalho de faculdade que só dizia o nome da cor de uma foto. Terminou funcionando ao vivo, com objetos, posição e cor ditos em voz alta.
 
-A primeira versão era um arquivo só, com o projeto copiado em quatro pastas dentro do repositório. A Vera foi reconstruída em etapas, cada uma com a decisão registrada num ADR:
+A primeira versão era um arquivo só, com o projeto copiado em quatro pastas dentro do repositório. O app foi reconstruído em etapas, cada uma com a decisão registrada num ADR:
 
 - **Câmera ao vivo**, dentro do app, que entrega os quadros para análise sem tirar foto.
 - **Objetos reconhecidos no próprio aparelho**, sem internet e sem enviar imagem para fora, com os nomes em português e a posição de cada um.
