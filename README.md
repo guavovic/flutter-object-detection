@@ -5,7 +5,6 @@
 <h1 align="center">Flutter Object Detection</h1>
 
 <p align="center">
-  <a href="https://github.com/guavovic/flutter-object-detection/releases"><img src="https://img.shields.io/github/v/release/guavovic/flutter-object-detection?include_prereleases&style=flat-square&label=release&color=ffff00" alt="Release"></a>
   <a href="https://github.com/guavovic/flutter-object-detection/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/guavovic/flutter-object-detection/ci.yml?branch=main&style=flat-square&label=CI" alt="CI"></a>
   <a href="LICENSE"><img src="https://img.shields.io/github/license/guavovic/flutter-object-detection?style=flat-square&label=licen%C3%A7a&color=ffff00" alt="Licença"></a>
 </p>
