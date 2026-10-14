@@ -13,8 +13,6 @@
 <p align="center">Aplicativo de celular, feito para pessoas cegas e com baixa visão, que diz em voz alta o que a câmera está apontando. Você aponta, e a Vera mostra na tela e fala o que há à frente: o objeto, onde ele está e de que cor é.</p>
 
 <p align="center">
-  <b><a href="https://github.com/guavovic/vera/releases">Versões</a></b>
-  &nbsp;•&nbsp;
   <a href="docs/decisions">Decisões de arquitetura</a>
 </p>
 
@@ -43,7 +41,6 @@ A primeira versão era um arquivo só, com o projeto copiado em quatro pastas de
 - **Aplicativo:** Flutter e Dart, no Android.
 - **Reconhecimento de objetos:** TensorFlow Lite, com o modelo EfficientDet-Lite0.
 - **Voz:** síntese de voz do aparelho, em português do Brasil.
-- **Entrega:** GitHub Actions.
 
 ---
 
