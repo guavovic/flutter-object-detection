@@ -1,50 +1,13 @@
-<p align="center">
-  <img src="docs/assets/icone.svg" alt="" width="160">
-</p>
+# Flutter Object Detection
 
-<h1 align="center">Flutter Object Detection</h1>
+Trabalho de faculdade de 2024, retomado e encerrado em 2026. É um aplicativo Android pensado para pessoas cegas e com baixa visão: a câmera fica aberta e, com um toque na tela, o app diz em voz alta o que está à frente, com o nome do objeto, o lado em que ele está e a cor.
 
-<p align="center">
-  <a href="https://github.com/guavovic/flutter-object-detection/releases"><img src="https://img.shields.io/github/v/release/guavovic/flutter-object-detection?include_prereleases&style=flat-square&label=release&color=ffff00" alt="Release"></a>
-  <a href="https://github.com/guavovic/flutter-object-detection/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/guavovic/flutter-object-detection/ci.yml?branch=main&style=flat-square&label=CI" alt="CI"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/guavovic/flutter-object-detection?style=flat-square&label=licen%C3%A7a&color=ffff00" alt="Licença"></a>
-</p>
+O reconhecimento roda no próprio aparelho, sem internet, com um modelo pronto de detecção de objetos. A cor é dada em português, pela referência mais próxima no espaço de cor CIELAB. O projeto parou numa versão de testes, sem publicação na loja.
 
-<p align="center">Aplicativo de celular, feito para pessoas cegas e com baixa visão, que diz em voz alta o que a câmera está apontando. Você aponta, e o app mostra na tela e fala o que há à frente: o objeto, onde ele está e de que cor é.</p>
+**Tecnologias:** Flutter, Dart, TensorFlow Lite (EfficientDet-Lite0) e síntese de voz do Android.
 
-> [!NOTE]
-> Projeto encerrado em 14/10/2026. O código fica público como registro de estudo e não recebe mais mudanças.
-
-<p align="center">
-  <a href="docs/decisions">Decisões de arquitetura</a>
-</p>
-
-## Destaques
-
-- **Ao vivo:** a câmera analisa o que vê sem tirar foto, e um toque na tela fala o que está à frente.
-- **Objeto, posição e cor:** cada objeto é dito com o nome em português, o lado em que está e a cor, como "Cadeira, à esquerda, cor azul".
-- **Sem internet:** o reconhecimento roda no próprio aparelho, e nenhuma imagem sai do celular.
-- **Cor em português:** nomes curtos e familiares, escolhidos pela cor mais próxima no espaço CIELAB.
-- **Voz e tela juntas:** letra grande e caixas de alto contraste para quem enxerga um pouco.
-
-## Como foi feito
-
-Começou como um trabalho de faculdade que só dizia o nome da cor de uma foto. Terminou funcionando ao vivo, com objetos, posição e cor ditos em voz alta.
-
-A primeira versão era um arquivo só, com o projeto copiado em quatro pastas dentro do repositório. O app foi reconstruído em etapas, cada uma com a decisão registrada num ADR:
-
-- **Câmera ao vivo**, dentro do app, que entrega os quadros para análise sem tirar foto.
-- **Objetos reconhecidos no próprio aparelho**, sem internet e sem enviar imagem para fora, com os nomes em português e a posição de cada um.
-- **Nomes de cor em português**, escolhidos pela referência mais próxima no espaço de cor CIELAB, que se aproxima de como a gente percebe as cores.
-- **Voz e tela juntas**, com letra grande e caixas de alto contraste para quem enxerga um pouco.
-- **Testes e CI** a cada mudança, com análise do código, testes e compilação do aplicativo.
-
-## Tecnologias
-
-- **Aplicativo:** Flutter e Dart, no Android.
-- **Reconhecimento de objetos:** TensorFlow Lite, com o modelo EfficientDet-Lite0.
-- **Voz:** síntese de voz do aparelho, em português do Brasil.
+As decisões do projeto estão em [`docs/decisions`](docs/decisions).
 
 ---
 
-<sub>Licença [MIT](LICENSE) · Feito por [Gustavo Victor](https://github.com/guavovic)</sub>
+<sub>Feito por [Gustavo Victor](https://github.com/guavovic)</sub>
